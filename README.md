@@ -37,8 +37,7 @@ Once you've got the map to show up, your next goal is to drop a single pin on Sa
 - Next, can you add only the first earthquake to the map?
 - Can you add pins for *all* the earthquakes to the map?
 
-#### Stretch:
-Extend your template:  
-- Calculate how long ago the quake occured and add it to the page. E.g. "28 hours ago".
+#### Stretch:  
+- Calculate how long ago the quake occurred and add it to the page. E.g. "28 hours ago".
 - Parse the title to only include the location, E.g. Instead of "M 4.2 - 1km ESE of Fontana, California", it should just say "Fontana, California"
 - Create a visual indicator of the magnitude of a quake. For instance, maybe a 4.0 is indicated by a "yellow" dot, a 5.0 by an "orange" dot, and anything larger is "red".
