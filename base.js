@@ -1,11 +1,11 @@
 // globals
-var weekly_quakes_endpoint = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_week.geojson"
-var $info_row_target;
+var weekly_quakes_endpoint = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson";
+var info_row_target;
 var map;
 
 $(document).ready(function(){
 
-  $info_row_target = $("#info");
+  info_row_target = $("#info");
 
   createMap();
   fetchQuakeData();
@@ -18,7 +18,7 @@ function fetchQuakeData(){
       // ADD INFO ROW
       var title = quake.properties.title;
       var hours_ago = Math.round( ( Date.now() - quake.properties.time ) / (1000*60*60) );
-      $info_row_target.append( "<p>" + title + " / " + hours_ago + " hours ago</p>");
+      info_row_target.append( "<p>" + title + " / " + hours_ago + " hours ago</p>");
 
       // CREATE MARKER
       var lat = quake.geometry.coordinates[1];
@@ -29,7 +29,7 @@ function fetchQuakeData(){
         title: title
       });
     });
-  })
+  });
 }
 
 function createMap(){

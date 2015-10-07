@@ -6,7 +6,7 @@ In this lab we will be using live data from the USGS (United States Geological S
 - Display a Google Map with a pin at the epicenter of each quake.
 
 #### Part 1. Rendering Data
-Take a moment to familiarize yourself with the dataset by opening it in your browser: [http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_week.geojson](http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_week.geojson).
+Take a moment to familiarize yourself with the dataset by opening it in your browser: [http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson](http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson).
 
 + What is the structure of the data?
     + How many earthquakes does it list?
@@ -36,12 +36,6 @@ Now, take a moment to familiarize yourself with the layout in `index.html`.
 Once you've got the map to show up, your next goal is to drop a single pin on San Francisco. This is a sanity check.  
 - Next, can you add only the first earthquake to the map?
 - Can you add pins for *all* the earthquakes to the map?
-
-#### Part 4. Refactor to use underscore.js for templating.
-Building up an html string in javascript is no fun. The rows in the "info" column are already pretty unwieldy. Before we extend our html any further, let's refactor to use templates. It will make our life a lot easier.  
-- Add an underscore template below the `body` tag.
-- When the page loads, grab the template and compile it.
-- Then, use your compiled-template each time you want to add a new "info" row to the page.
 
 #### Stretch:
 Extend your template:  
