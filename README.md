@@ -6,7 +6,7 @@ In this lab we will be using live data from the USGS (United States Geological S
 - Display a Google Map with a pin at the epicenter of each quake.
 
 #### Part 1. Rendering Data
-Take a moment to familiarize yourself with the dataset by opening it in your browser: [http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_week.geojson](http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_week.geojson).
+Take a moment to familiarize yourself with the dataset by opening it in your browser: [http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson](http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson).
 
 + What is the structure of the data?
     + How many earthquakes does it list?
