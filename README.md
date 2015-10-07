@@ -37,12 +37,6 @@ Once you've got the map to show up, your next goal is to drop a single pin on Sa
 - Next, can you add only the first earthquake to the map?
 - Can you add pins for *all* the earthquakes to the map?
 
-#### Part 4. Refactor to use underscore.js for templating.
-Building up an html string in javascript is no fun. The rows in the "info" column are already pretty unwieldy. Before we extend our html any further, let's refactor to use templates. It will make our life a lot easier.  
-- Add an underscore template below the `body` tag.
-- When the page loads, grab the template and compile it.
-- Then, use your compiled-template each time you want to add a new "info" row to the page.
-
 #### Stretch:
 Extend your template:  
 - Calculate how long ago the quake occured and add it to the page. E.g. "28 hours ago".
