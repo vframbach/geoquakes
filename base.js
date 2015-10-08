@@ -26,7 +26,8 @@ function fetchQuakeData(){
       new google.maps.Marker({
         position: new google.maps.LatLng(lat,lng),
         map: map,
-        title: title
+        title: title,
+        icon: 'earthquake.png'
       });
     });
   });

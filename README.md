@@ -36,6 +36,7 @@ Now, take a moment to familiarize yourself with the layout in `index.html`.
 Once you've got the map to show up, your next goal is to drop a single pin on San Francisco. This is a sanity check.  
 - Next, can you add only the first earthquake to the map?
 - Can you add pins for *all* the earthquakes to the map?
+- Can you use a custom *earthquake* icon for your pins?!
 
 #### Stretch:  
 - Calculate how long ago the quake occurred and add it to the page. E.g. "28 hours ago".
