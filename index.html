@@ -28,7 +28,7 @@
           <script id="quakes-template" type="text/x-handlebars-template">
             {{#each quakes}}
             <hr>
-            <p>{{properties.title}} <span class="small text-muted">({{hoursAgo properties.time}})</span></p>
+            <p>{{parseQuake properties.title}} <span class="small text-muted">({{hoursAgo properties.time}})</span></p>
             {{/each}}
           </script>
 
