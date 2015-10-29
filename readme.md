@@ -1,6 +1,6 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60"> GeoQuakes
 
-**Objective:** Display data from the USGS (United States Geological Survey) on significant earthquakes (M4.0 or greater) from the past week. Our goal is to list information about each quake and display a Google Map with a pin at the epicenter of each quake.
+**Objective:** Display data from the USGS (United States Geological Survey) on significant earthquakes (M4.0 or greater) from the past week. The goal is to list information about each quake and display a Google Map with a pin at the epicenter of each quake.
 
 ### Part 1. Rendering Data
 
@@ -16,14 +16,14 @@ Take a moment to familiarize yourself with the data set by opening it in your br
     * When did it happen?
       * How many hours ago is that?
 
-Now, take a moment to familiarize yourself with the layout in `index.html`. Your short term goal is to use <a href="http://handlebarsjs.com/" target="_blank">Handlebars templating</a> to render each *title* to the `quakes-list` section of the page.
+Now, take a moment to familiarize yourself with the layout in `index.html`. Your short term goal is to use <a href="http://handlebarsjs.com/" target="_blank">Handlebars templating</a> to render each `title` to the `quakes-list` section of the page.
 
 ### Part 2. Add Google Maps
 
 Your next goal is to integrate Google Maps:
   
   * Follow the tutorial at <a href="https://developers.google.com/maps/documentation/javascript/tutorial" target="_blank">Google Maps Javascript API</a>.
-    * Note that you will need to sign up for an API key. (see `index.html#L40`)
+    * Note that you will need to sign up for an API key (see `index.html#L40`).
     * Center your map on San Francisco: `{ lat: 37.78, lng: -122.44 }`
 
 ### Part 3. Add Pins to Your Map
