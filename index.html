@@ -22,17 +22,7 @@
       </div>
       <div class="col-md-6">
         <h2>Earthquakes in the Past Week</h2>
-        <div id="quakes-list">
-          
-          <!-- handlebars template -->
-          <script id="quakes-template" type="text/x-handlebars-template">
-            {{#each quakes}}
-            <hr>
-            <p>{{parseQuake properties.title}} <span class="small text-muted">({{hoursAgo properties.time}})</span></p>
-            {{/each}}
-          </script>
-
-        </div>
+        <div id="quakes-list"></div>
       </div>
     </div>
   </div>
@@ -47,7 +37,7 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.3/handlebars.min.js"></script>
 
   <!-- google maps -->
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHLett8djBo62dDXj0EjCimF8Rd6E8cxg"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
 
   <!-- custom script -->
   <script type="text/javascript" src="main.js"></script>

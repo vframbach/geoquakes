@@ -23,7 +23,7 @@ Now, take a moment to familiarize yourself with the layout in `index.html`. Your
 Your next goal is to integrate Google Maps:
   
   * Follow the tutorial at <a href="https://developers.google.com/maps/documentation/javascript/tutorial" target="_blank">Google Maps Javascript API</a>.
-    * Note that you will need to sign up for an API key. (see `index.html#L13`)
+    * Note that you will need to sign up for an API key. (see `index.html#L40`)
     * Center your map on San Francisco: `{ lat: 37.78, lng: -122.44 }`
 
 ### Part 3. Add Pins to Your Map
