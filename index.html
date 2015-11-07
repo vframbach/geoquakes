@@ -1,45 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+ <meta charset="UTF-8">
 
-  <!-- set viewport to device width to make site responsive -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <!-- set viewport to device width to make site responsive -->
+ <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- bootstrap css -->
-  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+ <!-- bootstrap css -->
+ <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-  <!-- custom styles -->
-  <link rel="stylesheet" type="text/css" href="main.css">
+ <!-- custom styles -->
+ <link rel="stylesheet" type="text/css" href="main.css">
 
-  <title>Quake Watch</title>
+ <title>Quake Watch</title>
 </head>
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <div id="map"></div>
+ <div class="container">
+   <div class="row">
+     <div class="col-md-6">
+       <div id="map" class="initMap">map goes here</div>
+
+       
       </div>
       <div class="col-md-6">
-        <h2>Earthquakes in the Past Week</h2>
-        <div id="quakes-list"></div>
-      </div>
-    </div>
-  </div>
+       <h2>Earthquakes in the Past Week</h2>
+      
+         <script id="quakes" type="text/x-handlebars-template">
+            <hr>
+             {{#each quakes}}
+               <h4>{{properties.title}}</h4>
+               <p><text>Hours ago: </text>{{properties.hoursAgo}}</p>
+               <p><text>Latitude and longitude: </text>{{geometry.coordinates.[0]}}, {{geometry.coordinates.[1]}}</p>
+               <hr>
+             {{/each}}
+         </script>
+       <div id="quakes-list"></div>
+
+     </div>
+   </div>
+ </div>
+
+<script type="text/javascript">
+
+var map;
+function initMap() {
   
-  <!-- jquery -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  var myLatLng = {lat: 37.78, lng: -122.44};
+  map = new google.maps.Map(document.getElementById('map'), {
+   center: {lat: 37.78, lng: -122.44},    //{ lat: 37.78, lng: -122.44 }
+   zoom: 8
+  });
 
-  <!-- bootstrap js -->
-  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+  });
+}
+</script>
 
-  <!-- handlebars -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.3/handlebars.min.js"></script>
 
-  <!-- google maps -->
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDVzdXi8nLGtMTMU6Mv5BjWTNIj19lfUo&callback=initMap"></script>
 
-  <!-- custom script -->
-  <script type="text/javascript" src="main.js"></script>
+ <!-- jquery -->
+ <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+ <!-- bootstrap js -->
+ <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+ <!-- handlebars -->
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.3/handlebars.min.js"></script>
+
+ <!-- google maps -->
+<!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDVzdXi8nLGtMTMU6Mv5BjWTNIj19lfUo"></script> -->
+
+ <!-- custom script -->
+ <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
